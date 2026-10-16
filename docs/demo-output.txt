@@ -1,0 +1,8 @@
+createEvent tx: 0xb124a4c45af57f266ab6247fb1f0fca6e00af98c89031beb4cf445996f52e490
+purchaseTicket tx: 0x5d5a648e50295dd25222fcf9231a305484fdb28187ac535d9876b166c166e79c
+ticket #1: event 0, owner 0x70997970C51812dc3A010C7d01b50e0d17dc79C8, redeemed false
+redeemTicket tx: 0x5d72ec078dc8891341674a45f914e02578a2844620168e466de43c7225be1868 -> redeemed: true
+duplicate redeem rejected: undefined
+unauthorized redeem rejected: undefined
+withdrawRevenue tx: 0x53d677a9199f298ec4bbb94b1fcf8cae158bcbbc6129a38dc9ca865eab2c6eba net gain (wei): 9979789748647750 gas cost (wei): 20210251352250
+revenue now: 0

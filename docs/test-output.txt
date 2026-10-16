@@ -1,0 +1,35 @@
+◇ injected env (0) from .env
+
+
+  CampusPass
+    Event creation
+      ✔ organizer creates an event (723ms)
+      ✔ rejects invalid data
+      ✔ non-owner cannot create or cancel events
+      ✔ unknown event id reverts
+    Ticket purchasing
+      ✔ student buys a ticket; ownership and inventory update (43ms)
+      ✔ rejects insufficient and excess payment (exact-payment policy)
+      ✔ cannot oversell
+      ✔ rejects cancelled and expired events
+      ✔ rejects nonexistent event
+    Ticket redemption
+      ✔ organizer redeems; status changes; token is kept
+      ✔ rejects duplicate redemption
+      ✔ rejects unauthorized redemption, even by the ticket owner
+      ✔ rejects nonexistent tickets
+    Revenue withdrawal
+      ✔ organizer withdraws proceeds
+      ✔ emits RevenueWithdrawn
+      ✔ rejects unauthorized withdrawal
+      ✔ cannot withdraw twice
+      ✔ failed transfer reverts and leaves accounting intact
+    Cancellation and refunds
+      ✔ owner claims refund once; organizer cannot withdraw cancelled funds
+      ✔ refund rejected for active event
+    Integration: full journey
+      ✔ deploy -> create -> buy -> verify -> redeem -> duplicate -> withdraw
+
+
+  21 passing (1s)
+
