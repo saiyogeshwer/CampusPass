@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # CampusPass — Decentralized Campus Event Ticketing
 
 Organizers publish events; students buy ERC-721 tickets with Sepolia test ETH; the organizer verifies and redeems tickets once. Ownership and redemption live on-chain.
@@ -67,3 +68,7 @@ Optional source verification: `npx hardhat verify --network sepolia <address>` (
 
 ## Limitations
 Single organizer (deployer) in v1; no in-browser QR scanner (phone camera opens the verify URL); not audited — passing tests do not make it production-safe.
+=======
+# CampusPass
+Decentralized college event ticketing and verification dApp using Solidity, React, MetaMask, and Ethereum Sepolia.
+>>>>>>> 5495fa40ffe1acba7264f7dc072e89d5b14082ad
