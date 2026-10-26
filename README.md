@@ -69,6 +69,3 @@ Optional source verification: `npx hardhat verify --network sepolia <address>` (
 ## Limitations
 Single organizer (deployer) in v1; no in-browser QR scanner (phone camera opens the verify URL); not audited — passing tests do not make it production-safe.
 =======
-# CampusPass
-Decentralized college event ticketing and verification dApp using Solidity, React, MetaMask, and Ethereum Sepolia.
-
