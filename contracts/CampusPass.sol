@@ -5,10 +5,6 @@ import {ERC721} from "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
 import {ReentrancyGuard} from "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
 
-/// @title CampusPass - decentralized campus event ticketing
-/// @notice Each ticket is an ERC-721 token. The chain is the source of truth for
-///         ownership and one-time redemption. Tickets are NOT burned on redemption.
-/// @dev v1 rule: the deployer (owner) is the organizer and the only account that can create events.
 contract CampusPass is ERC721, Ownable, ReentrancyGuard {
     struct EventInfo {
         uint256 id;
@@ -102,7 +98,7 @@ contract CampusPass is ERC721, Ownable, ReentrancyGuard {
         emit EventCancelled(eventId);
     }
 
-    // --------------------------------------------------------------- tickets
+    // ----------- tickets
 
     /// @notice Buy one ticket. Exact payment required (excess is rejected, not kept).
     function purchaseTicket(uint256 eventId) external payable nonReentrant returns (uint256 ticketId) {
